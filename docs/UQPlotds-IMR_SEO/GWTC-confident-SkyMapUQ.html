@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncertainty quantification for GWTC events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: left;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sky localization uncertainty quantification for GWTC events</h1>
+
+    
+    <p>
+    Results from processing LIGO/Virgo sky maps from the current (2024-08)
+    Gravitational Wave Transient Catalog (GWTC) list of "confident" events; see <a href="https://gwosc.org/eventapi/html/GWTC/">GWTC</a>.
+    </p>
+
+    <p>
+    The full catalog contains 93 events. The results here are for
+    the 81 binary black hole (BBH) events that were fit with
+    both the <em>IMRPhenomXPHM</em> and <em>SEOBNRv4PHM</em>
+    waveform models (abbreviated as IMR and SEO in plot annotations).
+    </p>
+    
+
+    <div class="gallery">
+        <img src="area_ratios-IMR.png" alt="area_ratios-IMR.png"><br>
+        <img src="area_ratios-SEO.png" alt="area_ratios-SEO.png"><br>
+        <img src="exarea-histo-IMR.png" alt="exarea-histo-IMR.png"><br>
+        <img src="exarea-histo-SEO.png" alt="exarea-histo-SEO.png"><br>
+        <img src="exarea-hpd90-IMR.png" alt="exarea-hpd90-IMR.png"><br>
+        <img src="exarea-hpd90-SEO.png" alt="exarea-hpd90-SEO.png"><br>
+        <img src="exarea-iarea-IMR.png" alt="exarea-iarea-IMR.png"><br>
+        <img src="exarea-iarea-SEO.png" alt="exarea-iarea-SEO.png"><br>
+        <img src="exarea-level-IMR.png" alt="exarea-level-IMR.png"><br>
+        <img src="exarea-level-SEO.png" alt="exarea-level-SEO.png"><br>
+        <img src="exarealevel-histo-IMR.png" alt="exarealevel-histo-IMR.png"><br>
+        <img src="exarealevel-histo-SEO.png" alt="exarealevel-histo-SEO.png"><br>
+    </div>
+</body>
+</html>

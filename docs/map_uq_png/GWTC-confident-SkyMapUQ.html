@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky maps and uncertainty quantifications for GWTC events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: left;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sky localization uncertainty quantification for GWTC events</h1>
+
+    
+    <p>
+    Results from processing LIGO/Virgo sky maps from the current (2024-08)
+    Gravitational Wave Transient Catalog (GWTC) list of "confident" events; see <a href="https://gwosc.org/eventapi/html/GWTC/">GWTC</a>.
+    </p>
+
+    <p>
+    The full catalog contains 93 events. The results here are for
+    the 81 binary black hole (BBH) events that were fit with
+    both the <em>IMRPhenomXPHM</em> and <em>SEOBNRv4PHM</em>
+    waveform models (abbreviated as IMR and SEO in plot annotations).
+    There are two plots for each event (on adjacent rows),
+    one for each waveform model.
+    </p>
+
+    <p>
+    Each plot has two panels:
+    <ul>
+    <li><em>Left:</em> Full-sky posterior PDF for the event location (Mollweide projection).
+    Color indicates PDF value (integrated over a HEALPix pixel); lighter is higher density.</li>
+    <li><em>Right:</em> Scalar uncertainty quantifications as textual annotations, giving expected search area (and its associated highest posterior density region (HPDR) level),
+    information-equivalent range, areas of .
+    Histogram (blue line) shows relative frequencies of areas searched until discovery
+    in 2000 simulated perfect optimal
+    searches of the posterior distribution; orange dots show corresponding values from an analytical
+    calculation.
+    Vertical line (brown) shows expected search effort (analytic); horizontal error bar (green) shows Monte Carlo estimate.
+    </li>
+    </ul>
+    </p>
+    
+
+    <div class="gallery">
+        <img src="GW150914-IMR.png" alt="GW150914-IMR.png"><br>
+        <img src="GW150914-SEO.png" alt="GW150914-SEO.png"><br>
+        <img src="GW151012-IMR.png" alt="GW151012-IMR.png"><br>
+        <img src="GW151012-SEO.png" alt="GW151012-SEO.png"><br>
+        <img src="GW170104-IMR.png" alt="GW170104-IMR.png"><br>
+        <img src="GW170104-SEO.png" alt="GW170104-SEO.png"><br>
+        <img src="GW170608-IMR.png" alt="GW170608-IMR.png"><br>
+        <img src="GW170608-SEO.png" alt="GW170608-SEO.png"><br>
+        <img src="GW170729-IMR.png" alt="GW170729-IMR.png"><br>
+        <img src="GW170729-SEO.png" alt="GW170729-SEO.png"><br>
+        <img src="GW170809-IMR.png" alt="GW170809-IMR.png"><br>
+        <img src="GW170809-SEO.png" alt="GW170809-SEO.png"><br>
+        <img src="GW170814-IMR.png" alt="GW170814-IMR.png"><br>
+        <img src="GW170814-SEO.png" alt="GW170814-SEO.png"><br>
+        <img src="GW170818-IMR.png" alt="GW170818-IMR.png"><br>
+        <img src="GW170818-SEO.png" alt="GW170818-SEO.png"><br>
+        <img src="GW170823-IMR.png" alt="GW170823-IMR.png"><br>
+        <img src="GW170823-SEO.png" alt="GW170823-SEO.png"><br>
+        <img src="GW190403_051519-IMR.png" alt="GW190403_051519-IMR.png"><br>
+        <img src="GW190403_051519-SEO.png" alt="GW190403_051519-SEO.png"><br>
+        <img src="GW190408_181802-IMR.png" alt="GW190408_181802-IMR.png"><br>
+        <img src="GW190408_181802-SEO.png" alt="GW190408_181802-SEO.png"><br>
+        <img src="GW190412-IMR.png" alt="GW190412-IMR.png"><br>
+        <img src="GW190412-SEO.png" alt="GW190412-SEO.png"><br>
+        <img src="GW190413_052954-IMR.png" alt="GW190413_052954-IMR.png"><br>
+        <img src="GW190413_052954-SEO.png" alt="GW190413_052954-SEO.png"><br>
+        <img src="GW190413_134308-IMR.png" alt="GW190413_134308-IMR.png"><br>
+        <img src="GW190413_134308-SEO.png" alt="GW190413_134308-SEO.png"><br>
+        <img src="GW190421_213856-IMR.png" alt="GW190421_213856-IMR.png"><br>
+        <img src="GW190421_213856-SEO.png" alt="GW190421_213856-SEO.png"><br>
+        <img src="GW190426_190642-IMR.png" alt="GW190426_190642-IMR.png"><br>
+        <img src="GW190426_190642-SEO.png" alt="GW190426_190642-SEO.png"><br>
+        <img src="GW190503_185404-IMR.png" alt="GW190503_185404-IMR.png"><br>
+        <img src="GW190503_185404-SEO.png" alt="GW190503_185404-SEO.png"><br>
+        <img src="GW190512_180714-IMR.png" alt="GW190512_180714-IMR.png"><br>
+        <img src="GW190512_180714-SEO.png" alt="GW190512_180714-SEO.png"><br>
+        <img src="GW190513_205428-IMR.png" alt="GW190513_205428-IMR.png"><br>
+        <img src="GW190513_205428-SEO.png" alt="GW190513_205428-SEO.png"><br>
+        <img src="GW190514_065416-IMR.png" alt="GW190514_065416-IMR.png"><br>
+        <img src="GW190514_065416-SEO.png" alt="GW190514_065416-SEO.png"><br>
+        <img src="GW190517_055101-IMR.png" alt="GW190517_055101-IMR.png"><br>
+        <img src="GW190517_055101-SEO.png" alt="GW190517_055101-SEO.png"><br>
+        <img src="GW190519_153544-IMR.png" alt="GW190519_153544-IMR.png"><br>
+        <img src="GW190519_153544-SEO.png" alt="GW190519_153544-SEO.png"><br>
+        <img src="GW190521-IMR.png" alt="GW190521-IMR.png"><br>
+        <img src="GW190521-SEO.png" alt="GW190521-SEO.png"><br>
+        <img src="GW190521_074359-IMR.png" alt="GW190521_074359-IMR.png"><br>
+        <img src="GW190521_074359-SEO.png" alt="GW190521_074359-SEO.png"><br>
+        <img src="GW190527_092055-IMR.png" alt="GW190527_092055-IMR.png"><br>
+        <img src="GW190527_092055-SEO.png" alt="GW190527_092055-SEO.png"><br>
+        <img src="GW190602_175927-IMR.png" alt="GW190602_175927-IMR.png"><br>
+        <img src="GW190602_175927-SEO.png" alt="GW190602_175927-SEO.png"><br>
+        <img src="GW190620_030421-IMR.png" alt="GW190620_030421-IMR.png"><br>
+        <img src="GW190620_030421-SEO.png" alt="GW190620_030421-SEO.png"><br>
+        <img src="GW190630_185205-IMR.png" alt="GW190630_185205-IMR.png"><br>
+        <img src="GW190630_185205-SEO.png" alt="GW190630_185205-SEO.png"><br>
+        <img src="GW190701_203306-IMR.png" alt="GW190701_203306-IMR.png"><br>
+        <img src="GW190701_203306-SEO.png" alt="GW190701_203306-SEO.png"><br>
+        <img src="GW190706_222641-IMR.png" alt="GW190706_222641-IMR.png"><br>
+        <img src="GW190706_222641-SEO.png" alt="GW190706_222641-SEO.png"><br>
+        <img src="GW190707_093326-IMR.png" alt="GW190707_093326-IMR.png"><br>
+        <img src="GW190707_093326-SEO.png" alt="GW190707_093326-SEO.png"><br>
+        <img src="GW190708_232457-IMR.png" alt="GW190708_232457-IMR.png"><br>
+        <img src="GW190708_232457-SEO.png" alt="GW190708_232457-SEO.png"><br>
+        <img src="GW190719_215514-IMR.png" alt="GW190719_215514-IMR.png"><br>
+        <img src="GW190719_215514-SEO.png" alt="GW190719_215514-SEO.png"><br>
+        <img src="GW190720_000836-IMR.png" alt="GW190720_000836-IMR.png"><br>
+        <img src="GW190720_000836-SEO.png" alt="GW190720_000836-SEO.png"><br>
+        <img src="GW190725_174728-IMR.png" alt="GW190725_174728-IMR.png"><br>
+        <img src="GW190725_174728-SEO.png" alt="GW190725_174728-SEO.png"><br>
+        <img src="GW190727_060333-IMR.png" alt="GW190727_060333-IMR.png"><br>
+        <img src="GW190727_060333-SEO.png" alt="GW190727_060333-SEO.png"><br>
+        <img src="GW190728_064510-IMR.png" alt="GW190728_064510-IMR.png"><br>
+        <img src="GW190728_064510-SEO.png" alt="GW190728_064510-SEO.png"><br>
+        <img src="GW190731_140936-IMR.png" alt="GW190731_140936-IMR.png"><br>
+        <img src="GW190731_140936-SEO.png" alt="GW190731_140936-SEO.png"><br>
+        <img src="GW190803_022701-IMR.png" alt="GW190803_022701-IMR.png"><br>
+        <img src="GW190803_022701-SEO.png" alt="GW190803_022701-SEO.png"><br>
+        <img src="GW190805_211137-IMR.png" alt="GW190805_211137-IMR.png"><br>
+        <img src="GW190805_211137-SEO.png" alt="GW190805_211137-SEO.png"><br>
+        <img src="GW190828_063405-IMR.png" alt="GW190828_063405-IMR.png"><br>
+        <img src="GW190828_063405-SEO.png" alt="GW190828_063405-SEO.png"><br>
+        <img src="GW190910_112807-IMR.png" alt="GW190910_112807-IMR.png"><br>
+        <img src="GW190910_112807-SEO.png" alt="GW190910_112807-SEO.png"><br>
+        <img src="GW190915_235702-IMR.png" alt="GW190915_235702-IMR.png"><br>
+        <img src="GW190915_235702-SEO.png" alt="GW190915_235702-SEO.png"><br>
+        <img src="GW190916_200658-IMR.png" alt="GW190916_200658-IMR.png"><br>
+        <img src="GW190916_200658-SEO.png" alt="GW190916_200658-SEO.png"><br>
+        <img src="GW190924_021846-IMR.png" alt="GW190924_021846-IMR.png"><br>
+        <img src="GW190924_021846-SEO.png" alt="GW190924_021846-SEO.png"><br>
+        <img src="GW190925_232845-IMR.png" alt="GW190925_232845-IMR.png"><br>
+        <img src="GW190925_232845-SEO.png" alt="GW190925_232845-SEO.png"><br>
+        <img src="GW190929_012149-IMR.png" alt="GW190929_012149-IMR.png"><br>
+        <img src="GW190929_012149-SEO.png" alt="GW190929_012149-SEO.png"><br>
+        <img src="GW190930_133541-IMR.png" alt="GW190930_133541-IMR.png"><br>
+        <img src="GW190930_133541-SEO.png" alt="GW190930_133541-SEO.png"><br>
+        <img src="GW191103_012549-IMR.png" alt="GW191103_012549-IMR.png"><br>
+        <img src="GW191103_012549-SEO.png" alt="GW191103_012549-SEO.png"><br>
+        <img src="GW191105_143521-IMR.png" alt="GW191105_143521-IMR.png"><br>
+        <img src="GW191105_143521-SEO.png" alt="GW191105_143521-SEO.png"><br>
+        <img src="GW191109_010717-IMR.png" alt="GW191109_010717-IMR.png"><br>
+        <img src="GW191109_010717-SEO.png" alt="GW191109_010717-SEO.png"><br>
+        <img src="GW191113_071753-IMR.png" alt="GW191113_071753-IMR.png"><br>
+        <img src="GW191113_071753-SEO.png" alt="GW191113_071753-SEO.png"><br>
+        <img src="GW191126_115259-IMR.png" alt="GW191126_115259-IMR.png"><br>
+        <img src="GW191126_115259-SEO.png" alt="GW191126_115259-SEO.png"><br>
+        <img src="GW191127_050227-IMR.png" alt="GW191127_050227-IMR.png"><br>
+        <img src="GW191127_050227-SEO.png" alt="GW191127_050227-SEO.png"><br>
+        <img src="GW191129_134029-IMR.png" alt="GW191129_134029-IMR.png"><br>
+        <img src="GW191129_134029-SEO.png" alt="GW191129_134029-SEO.png"><br>
+        <img src="GW191204_110529-IMR.png" alt="GW191204_110529-IMR.png"><br>
+        <img src="GW191204_110529-SEO.png" alt="GW191204_110529-SEO.png"><br>
+        <img src="GW191204_171526-IMR.png" alt="GW191204_171526-IMR.png"><br>
+        <img src="GW191204_171526-SEO.png" alt="GW191204_171526-SEO.png"><br>
+        <img src="GW191215_223052-IMR.png" alt="GW191215_223052-IMR.png"><br>
+        <img src="GW191215_223052-SEO.png" alt="GW191215_223052-SEO.png"><br>
+        <img src="GW191216_213338-IMR.png" alt="GW191216_213338-IMR.png"><br>
+        <img src="GW191216_213338-SEO.png" alt="GW191216_213338-SEO.png"><br>
+        <img src="GW191222_033537-IMR.png" alt="GW191222_033537-IMR.png"><br>
+        <img src="GW191222_033537-SEO.png" alt="GW191222_033537-SEO.png"><br>
+        <img src="GW191230_180458-IMR.png" alt="GW191230_180458-IMR.png"><br>
+        <img src="GW191230_180458-SEO.png" alt="GW191230_180458-SEO.png"><br>
+        <img src="GW200112_155838-IMR.png" alt="GW200112_155838-IMR.png"><br>
+        <img src="GW200112_155838-SEO.png" alt="GW200112_155838-SEO.png"><br>
+        <img src="GW200128_022011-IMR.png" alt="GW200128_022011-IMR.png"><br>
+        <img src="GW200128_022011-SEO.png" alt="GW200128_022011-SEO.png"><br>
+        <img src="GW200129_065458-IMR.png" alt="GW200129_065458-IMR.png"><br>
+        <img src="GW200129_065458-SEO.png" alt="GW200129_065458-SEO.png"><br>
+        <img src="GW200202_154313-IMR.png" alt="GW200202_154313-IMR.png"><br>
+        <img src="GW200202_154313-SEO.png" alt="GW200202_154313-SEO.png"><br>
+        <img src="GW200208_130117-IMR.png" alt="GW200208_130117-IMR.png"><br>
+        <img src="GW200208_130117-SEO.png" alt="GW200208_130117-SEO.png"><br>
+        <img src="GW200208_222617-IMR.png" alt="GW200208_222617-IMR.png"><br>
+        <img src="GW200208_222617-SEO.png" alt="GW200208_222617-SEO.png"><br>
+        <img src="GW200209_085452-IMR.png" alt="GW200209_085452-IMR.png"><br>
+        <img src="GW200209_085452-SEO.png" alt="GW200209_085452-SEO.png"><br>
+        <img src="GW200210_092254-IMR.png" alt="GW200210_092254-IMR.png"><br>
+        <img src="GW200210_092254-SEO.png" alt="GW200210_092254-SEO.png"><br>
+        <img src="GW200216_220804-IMR.png" alt="GW200216_220804-IMR.png"><br>
+        <img src="GW200216_220804-SEO.png" alt="GW200216_220804-SEO.png"><br>
+        <img src="GW200219_094415-IMR.png" alt="GW200219_094415-IMR.png"><br>
+        <img src="GW200219_094415-SEO.png" alt="GW200219_094415-SEO.png"><br>
+        <img src="GW200220_061928-IMR.png" alt="GW200220_061928-IMR.png"><br>
+        <img src="GW200220_061928-SEO.png" alt="GW200220_061928-SEO.png"><br>
+        <img src="GW200220_124850-IMR.png" alt="GW200220_124850-IMR.png"><br>
+        <img src="GW200220_124850-SEO.png" alt="GW200220_124850-SEO.png"><br>
+        <img src="GW200224_222234-IMR.png" alt="GW200224_222234-IMR.png"><br>
+        <img src="GW200224_222234-SEO.png" alt="GW200224_222234-SEO.png"><br>
+        <img src="GW200225_060421-IMR.png" alt="GW200225_060421-IMR.png"><br>
+        <img src="GW200225_060421-SEO.png" alt="GW200225_060421-SEO.png"><br>
+        <img src="GW200302_015811-IMR.png" alt="GW200302_015811-IMR.png"><br>
+        <img src="GW200302_015811-SEO.png" alt="GW200302_015811-SEO.png"><br>
+        <img src="GW200306_093714-IMR.png" alt="GW200306_093714-IMR.png"><br>
+        <img src="GW200306_093714-SEO.png" alt="GW200306_093714-SEO.png"><br>
+        <img src="GW200308_173609-IMR.png" alt="GW200308_173609-IMR.png"><br>
+        <img src="GW200308_173609-SEO.png" alt="GW200308_173609-SEO.png"><br>
+        <img src="GW200311_115853-IMR.png" alt="GW200311_115853-IMR.png"><br>
+        <img src="GW200311_115853-SEO.png" alt="GW200311_115853-SEO.png"><br>
+        <img src="GW200316_215756-IMR.png" alt="GW200316_215756-IMR.png"><br>
+        <img src="GW200316_215756-SEO.png" alt="GW200316_215756-SEO.png"><br>
+        <img src="GW200322_091133-IMR.png" alt="GW200322_091133-IMR.png"><br>
+        <img src="GW200322_091133-SEO.png" alt="GW200322_091133-SEO.png"><br>
+    </div>
+</body>
+</html>
